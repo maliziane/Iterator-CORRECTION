@@ -1,6 +1,6 @@
 package org.antislashn.gof;
 
-public class Tableau implements List{
+public class Tableau implements List<Integer>{
 	private int[] tab;
 	private int size;
 	
@@ -18,7 +18,7 @@ public class Tableau implements List{
 	}
 
 	@Override
-	public Iterator iterator() {
+	public Iterator<Integer> iterator() {
 		return new TableauIterator(this);
 	}
 	@Override
